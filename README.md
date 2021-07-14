@@ -1,4 +1,4 @@
-# class-component
+# lifecycle, class component, API
 
 Exercícios de ReactJS referentes a Aula 02 da Academia FrontEnd da Accenture.
 
