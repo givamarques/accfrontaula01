@@ -6,10 +6,10 @@ import './index.css';
 
 class App extends React.Component{
   state = {
-    texto: “ Turma React”
+    texto: "Turma React"
   }
   handleClick(){
-    alert(”Alerta ativado!“)
+    alert("Alerta ativado!")
   }
   handleTextCharge(e){
     this.setState({
@@ -18,10 +18,13 @@ class App extends React.Component{
   }
 
   render(){
-    return(<div><h1>Hello World {this.props.name}</h1>
-    <h2>{this.state.texto}</h2>
-    <input type=”text” onChange={this.handleTextCharge.bind(this)}></input>
-    <button onClick={this.handleClick.bind(this)}>Exibir Alerta</button>
+    return(
+    <div>
+      <h1>Hello World {this.props.name}</h1>
+      <h2>{this.state.texto}</h2>
+      <input type="text" onChange={this.handleTextCharge.bind(this)}></input>
+      <button onClick={this.handleClick.bind(this)}>Exibir Alerta</button>
+    </div>
   )}
 }
 
