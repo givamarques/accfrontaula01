@@ -21,7 +21,7 @@ class App extends React.Component{
       <div>
         <strong>Olá, {this.props.name} </strong>
         <div>
-          Digite o CEP: <input type="text" onChange={this.handleTextChange.bind(this)=>{}}></input>
+          Digite o CEP: <input type="text" onChange={this.handleTextChange.bind(this)}/>
           {Object.entries(this.state.cep).map((values, key)=>(
             <h2 key={key}><strong>{values[0]}:</strong>{values[1]}</h2>
           ))}
